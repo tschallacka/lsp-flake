@@ -1,7 +1,7 @@
 {
   "name": "nix-lsps",
   "description": "Ten language servers for Claude Code (bash, PHP incl. .phtml, Java, Kotlin, Nix, Python, Rust, TypeScript, Vue, YAML). Needs its binaries installed separately: nix profile add github:Tschallacka/lsp-flake#lsps — then run /lsp-doctor to check.",
-  "version": "1.4.4",
+  "version": "1.5.0",
   "author": {
     "name": "Tschallacka"
   },

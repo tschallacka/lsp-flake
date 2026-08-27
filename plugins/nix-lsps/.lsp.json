@@ -1,7 +1,9 @@
 {
   "bash-language-server": {
     "command": "bash-language-server",
-    "args": ["start"],
+    "args": [
+      "start"
+    ],
     "extensionToLanguage": {
       ".sh": "shellscript",
       ".bash": "shellscript",
@@ -12,7 +14,34 @@
   },
   "intelephense": {
     "command": "intelephense",
-    "args": ["--stdio"],
+    "args": [
+      "--stdio"
+    ],
+    "env": {
+      "NODE_OPTIONS": "--max-old-space-size=6144"
+    },
+    "settings": {
+      "intelephense": {
+        "files": {
+          "maxSize": 3000000,
+          "exclude": [
+            "**/.git/**",
+            "**/node_modules/**",
+            "**/generated/**",
+            "**/pub/static/**",
+            "**/pub/media/**",
+            "**/var/cache/**",
+            "**/var/view_preprocessed/**",
+            "**/var/page_cache/**",
+            "**/var/log/**",
+            "**/var/session/**",
+            "**/var/tmp/**",
+            "**/dev/tests/**/_files/**",
+            "**/.claude/worktrees/**"
+          ]
+        }
+      }
+    },
     "extensionToLanguage": {
       ".php": "php",
       ".phtml": "php",
@@ -43,7 +72,9 @@
   },
   "pyright": {
     "command": "pyright-langserver",
-    "args": ["--stdio"],
+    "args": [
+      "--stdio"
+    ],
     "extensionToLanguage": {
       ".py": "python",
       ".pyi": "python",
@@ -58,7 +89,9 @@
   },
   "typescript-language-server": {
     "command": "typescript-language-server",
-    "args": ["--stdio"],
+    "args": [
+      "--stdio"
+    ],
     "extensionToLanguage": {
       ".ts": "typescript",
       ".mts": "typescript",
@@ -72,14 +105,18 @@
   },
   "vue-language-server": {
     "command": "vue-language-server",
-    "args": ["--stdio"],
+    "args": [
+      "--stdio"
+    ],
     "extensionToLanguage": {
       ".vue": "vue"
     }
   },
   "yaml-language-server": {
     "command": "yaml-language-server",
-    "args": ["--stdio"],
+    "args": [
+      "--stdio"
+    ],
     "extensionToLanguage": {
       ".yaml": "yaml",
       ".yml": "yaml"
